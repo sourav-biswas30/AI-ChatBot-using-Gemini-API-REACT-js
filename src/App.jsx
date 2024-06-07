@@ -11,7 +11,7 @@ function App() {
   async function genAns(){
     setAnswer("...Your answer is being generated. Please bear with me.");
     const response= await axios({
-    url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyARx4arz3rtLz__dMpaEuhADB0wiDMbR8w",
+    url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key= USE YOUR OWN GEMINI API HERE, I WITHDREW MINE AS IT'S CONFIDENTIAL",
     method:"post",
     data: {
       contents:[
