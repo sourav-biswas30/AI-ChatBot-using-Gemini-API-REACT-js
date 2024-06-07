@@ -1,0 +1,88 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000; 
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #1e90ff; /* Lighter blue for better contrast */
+  text-decoration: inherit;
+}
+a:hover {
+  color: #00bfff; /* Even lighter blue on hover */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Allow vertical stacking */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #000000; /* Ensure body background is black */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #ffffff; /* Ensure header text is white */
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #333333; /* Dark grey background for buttons */
+  color: #ffffff; /* White text for buttons */
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-top: 1em; /* Add space above the button */
+}
+button:hover {
+  border-color: #1e90ff; /* Lighter blue border on hover */
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+input, textarea {
+  background-color: #333333; /* Dark grey background for inputs */
+  color: #ffffff; /* White text for inputs */
+  border: 1px solid #555555; /* Medium grey border */
+  border-radius: 4px;
+  padding: 0.6em;
+  font-size: 1em;
+  font-family: inherit;
+  width: 80%; /* Make text areas larger */
+  max-width: 800px; /* Limit maximum width */
+  margin-bottom: 1em; /* Space out inputs */
+}
+input:focus, textarea:focus {
+  border-color: #1e90ff; /* Lighter blue border on focus */
+  outline: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
